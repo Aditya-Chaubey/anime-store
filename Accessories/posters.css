@@ -1,0 +1,277 @@
+html, body {
+    margin: 0;
+    font-family: 'nunito';
+    line-height: 1.8em;
+}
+
+nav ul {
+    display : flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px 0 20px 0;
+    justify-content: space-evenly;
+    background-color: #171717;
+}
+
+li {
+    list-style-type: none;
+    ;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    color: #00998c;
+}
+
+.heading-container {
+    padding: 50px 5%;
+    height: auto;
+    background-color: #fab1e9;
+    overflow: auto;
+}
+
+.heading-image {
+    padding: 50px 4% 0 8%;
+    float: right;
+    width: 40%;
+}
+
+h1 {
+    font-size: 5em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Montserrat";
+    line-height: normal;
+}
+.heading-container p {
+    padding-top: 20px;
+}
+
+.waifu-heading{
+    overflow: auto;
+    background-color: #9cd7ee ;
+}
+
+.waifu-heading img {
+    float: left;
+    padding: 50px;
+    padding-left: 80px;
+}
+
+.waifu-heading h2{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    line-height: normal;
+}
+
+.waifu-heading p {
+    padding-right: 4%;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 60px 0;
+}
+
+.product {
+    width: 18%;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 30px;
+    margin-bottom: 20px;
+    transition: all 0.2s;
+}
+
+.product:hover{
+    transform: scale(1.04);
+    box-shadow: 2px 5px 20px rgb(201, 197, 197);
+}
+
+.product img{
+    height: 80%;
+    width: auto;
+}
+
+.product p{
+    margin: 0px;
+    width: 60%;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #51a03e;
+}
+
+.product h3{
+    width: 100%;
+    margin: 0px;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-top: 15px;
+    
+}
+.product button{
+    margin: 0px;
+    width: 40%;
+    background-color: #00998c;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    height: 35px;
+    margin-top: 10px;
+    transition: all 0.2s;
+}
+
+.product button:hover {
+    background-color: #fab1e9;
+    color: #171717;
+    transform: scale(1.05);
+}
+
+.husbando-heading{
+    overflow: auto;
+    background-color: #9cd7ee ;
+}
+
+.husbando-heading img {
+    float: right;
+    padding: 50px;
+    padding-right: 80px;
+}
+
+.husbando-heading h2{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    line-height: normal;
+}
+
+.husbando-heading p{
+    padding-left: 4%;
+}
+
+
+.rest-heading{
+    overflow: auto;
+    background-color: #9cd7ee ;
+}
+
+.rest-heading img {
+    float: left;
+    height: 300px;
+    padding: 50px;
+    padding-left: 80px;
+}
+
+.rest-heading h2{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    line-height: normal;
+}
+
+.rest-heading p{
+    padding-right: 4%;
+}
+
+
+
+footer{
+    display: flex;;
+    justify-content: center;
+    background-color: #171717;
+    margin-top: 50px;
+    color: white;
+    padding: 25px 0;
+    
+}
+
+@media screen and (max-width: 1100px){
+    .heading-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .heading-image{
+        float: none;
+        width: 70%; 
+    }
+
+    .waifu-heading {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .waifu-heading h2{
+        padding-top: 0;
+    }
+    .waifu-heading img{
+        width: 70%;
+        padding-bottom: 0;
+    }
+    .waifu-heading p{
+        padding-left: 4%;
+        padding-bottom: 40px;
+    }
+
+    .product {
+        width: 25%;
+    }
+
+    .husbando-heading{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .husbando-heading img{
+        padding-bottom: 0;
+        width: 70%;
+    }
+    .husbando-heading h2{
+        padding-top: 0px;
+    }
+    .husbando-heading p{
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:825px) {
+    .product {
+        width: 35%;
+    }
+
+    .rest-heading{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .rest-heading img{
+        width: 70%;
+        height: auto;
+    }
+    .rest-heading p{
+        padding-left: 4%;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .product {
+        width: 70%;
+    }
+    h1 {
+        font-size: 3.5em;
+    }
+}
